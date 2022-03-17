@@ -1,0 +1,38 @@
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100;400&display=swap');
+ * {
+     box-sizing: border-box;
+ }
+ 
+ body {
+     padding: 0;
+     margin: 0;
+     font-family: 'Open Sans', sans-serif;
+     /* font-family: 'Roboto', sans-serif; */
+ }
+ /* .left {
+     margin-top: -60%;
+ } */
+ 
+ .navbar {
+     margin-top: -57%;
+ }
+ 
+ #logo1 {
+     margin-top: -5%;
+ }
+ 
+ .navbar-nav {
+     margin-left: 10%;
+     font-size: 18px;
+ }
+ 
+ .nav-item {
+     margin: 2%;
+ }
+ 
+ #bgVideo {
+     right: 0;
+     bottom: 0;
+     min-width: 100%;
+     min-height: 100%;
+ }
