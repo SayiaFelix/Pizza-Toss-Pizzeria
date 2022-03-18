@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Open+Sans&family=PT+Sans:ital@1&family=Roboto:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Inspiration&family=M+PLUS+1p:wght@300&family=Open+Sans&family=PT+Sans:ital@1&family=Roboto:wght@100;400&display=swap');
 * {
     box-sizing: border-box;
 }
@@ -20,6 +20,33 @@ body {
     margin-top: -5%;
 }
 
+#Helo {
+    color: #DFD599;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Cookie', cursive;
+}
+
+#pizza {
+    color: #E6A756;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+#pizza2 {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'M PLUS 1p', sans-serif;
+    color: #fff;
+}
+
+#tag {
+    color: #DFD599;
+    font-size: 40px;
+    font-weight: lighter;
+    font-family: 'Cookie', cursive;
+}
+
 .About-us {
     background: url("../images/aboutus.jpg");
     background-repeat: no-repeat;
@@ -28,33 +55,36 @@ body {
     width: 100%;
 }
 
-.header {
-    color: #fff;
-    font-size: 45px;
+#About {
+    margin-top: 6%;
 }
 
-.mb-3 {
-    color: #000;
-    font-size: 23px;
-    font-family: 'PT Sans', sans-serif;
+#header {
+    color: #5B2110;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+#header1 {
+    color: #E6A756;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Cookie', cursive;
 }
 
 .btn {
-    background-color: transparent;
+    background-color: #674844;
     border: 2px solid #fff;
-    border-radius: 50%;
-    margin-left: 82%;
-    margin-top: -10%;
+    border-radius: 20px;
+    margin-top: -46%;
+    margin-left: 1%;
+    width: 12%;
 }
 
 .btn a {
     font-weight: bold;
     color: #CDAA7C;
     font-size: 25px;
-}
-
-#About {
-    margin-top: 13%;
 }
 
 #welcome {
@@ -67,12 +97,27 @@ body {
     margin-left: 20%;
 }
 
+#img {
+    font-size: 30px;
+    font-weight: 900;
+    color: #fff;
+}
+
+#imgcontent {
+    color: #DFD599;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.carousel-item img {
+    border-radius: 10%;
+}
+
 .communication-bar {
-    height: 27vh;
+    height: 24vh;
     margin-top: 1%;
     background-color: #BE8E5D;
     width: 100%;
-    /* padding-left: 35%; */
     box-shadow: rgba(80, 48, 48, 0.5);
     border-radius: 10px;
 }
