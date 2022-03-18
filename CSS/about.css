@@ -9,6 +9,11 @@ body {
     font-family: 'Open Sans', sans-serif;
     position: relative;
     width: 100%;
+    background: url("../images/aboutbgg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
 }
 
 #logo2 {
@@ -63,7 +68,7 @@ body {
 }
 
 .communication-bar {
-    height: 23vh;
+    height: 27vh;
     margin-top: 1%;
     background-color: #BE8E5D;
     width: 100%;
@@ -111,4 +116,8 @@ body {
     position: absolute;
     text-align: center;
     padding-left: 35%;
+}
+
+#Copyright {
+    color: #050505;
 }
