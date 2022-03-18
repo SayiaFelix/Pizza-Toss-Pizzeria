@@ -1,122 +1,142 @@
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100;400&display=swap');
-    * {
-        box-sizing: border-box;
-    }
-    
-    body {
-        padding: 0;
-        margin: 0;
-        font-family: 'Open Sans', sans-serif;
-        font-family: 'Roboto', sans-serif;
-    }
-    
-    .navbar {
-        margin-top: -13%;
-        position: fixed;
-    }
-    
-    #logo1 {
-        margin-top: -28%;
-    }
-    
-    .nav-item {
-        margin: 5%;
-        font-size: 20px;
-    }
-    
-    #bgVideo {
-        right: 0;
-        bottom: 0;
-        min-width: 100%;
-        min-height: 100%;
-        position: absolute;
-    }
-    
-    .container-fluid {
-        text-align: center;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        padding-bottom: 20rem;
-    }
-    
-    #header {
-        color: #CDAA7C;
-        font-size: 45px;
-    }
-    
-    .mb-3 {
-        color: #ADA69F;
-        font-size: 20px;
-    }
-    
-    .btn {
-        background-color: transparent;
-        border: 1px solid #fff;
-    }
-    
-    .communication a:hover {
-        background-color: #ADA69F;
-        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
-        transition: all ease 0.5s;
-    }
-    
-    .communication a:hover i {
-        color: #ffffff;
-        transition: all ease 0.5s;
-    }
-    
-    .communication {
-        position: fixed;
-        top: 50%;
-        right: 0px;
-        transform: translateY(-50%);
-    }
-    
-    .communication a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50px;
-        height: 40px;
-        padding: 0px;
-        margin: 0px;
-        line-height: 0px;
-        border-radius: 10px;
-        background-color: wheat;
-        border: 1px solid #cbcbcb;
-        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
-    }
-    
-    .communication i {
-        color: #2b2b2b;
-        font-size: 23px;
-    }
-    
-    @media only screen and (max-width: 720px) {
-        .container-fluid {
-            padding-bottom: 30rem;
-        }
-        #header {
-            font-size: 35px;
-        }
-        .mb-3 {
-            font-size: 15px;
-        }
-    }
-    
-    @media only screen and (max-width: 530px) {
-        .container-fluid {
-            padding-bottom: 36rem;
-        }
-        #header {
-            font-size: 22px;
-        }
-        .mb-3 {
-            font-size: 11px;
-        }
-        .btn {
-            width: 100px;
-            font-size: 16px;
-        }
-    }
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100;400&display=swap');
+ * {
+     box-sizing: border-box;
+ }
+ 
+ body {
+     padding: 0;
+     margin: 0;
+     font-family: 'Open Sans', sans-serif;
+     font-family: 'Roboto', sans-serif;
+ }
+ 
+ .navbar {
+     margin-top: -13%;
+     position: fixed;
+ }
+ 
+ #logo1 {
+     margin-top: -28%;
+ }
+ 
+ .container {
+     margin-left: 10%;
+ }
+ 
+ #bgVideo {
+     right: 0;
+     bottom: 0;
+     min-width: 100%;
+     min-height: 100%;
+     position: absolute;
+ }
+ 
+ .container-fluid {
+     text-align: center;
+     position: fixed;
+     bottom: 0;
+     width: 100%;
+     padding-bottom: 20rem;
+ }
+ 
+ #header {
+     color: #CDAA7C;
+     font-size: 45px;
+ }
+ 
+ .mb-3 {
+     color: #ADA69F;
+     font-size: 20px;
+ }
+ 
+ .btn {
+     background-color: transparent;
+     border: 2px solid #fff;
+     font-weight: bold;
+     color: #CDAA7C;
+     font-size: 25px;
+ }
+ 
+ .communication a:hover {
+     background-color: #ADA69F;
+     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+     transition: all ease 0.5s;
+ }
+ 
+ .communication a:hover i {
+     color: #ffffff;
+     transition: all ease 0.5s;
+ }
+ 
+ .communication {
+     position: fixed;
+     top: 50%;
+     right: 0px;
+     transform: translateY(-50%);
+ }
+ 
+ .communication a {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 50px;
+     height: 40px;
+     padding: 0px;
+     margin: 0px;
+     line-height: 0px;
+     border-radius: 10px;
+     background-color: wheat;
+     border: 1px solid #cbcbcb;
+     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .communication i {
+     color: #2b2b2b;
+     font-size: 23px;
+ }
+ 
+ @media only screen and (max-width: 720px) {
+     .container-fluid {
+         padding-bottom: 30rem;
+     }
+     #header {
+         font-size: 35px;
+     }
+     .mb-3 {
+         font-size: 15px;
+     }
+     .btn {
+         width: 130px;
+         font-size: 14px;
+     }
+     .communication {
+         position: fixed;
+         top: 50%;
+         right: 0px;
+         transform: translateY(-50%);
+         padding-bottom: 20rem;
+     }
+ }
+ 
+ @media only screen and (max-width: 530px) {
+     .container-fluid {
+         padding-bottom: 36rem;
+     }
+     #header {
+         font-size: 22px;
+     }
+     .mb-3 {
+         font-size: 11px;
+     }
+     .btn {
+         width: 110px;
+         font-size: 12px;
+     }
+     .communication {
+         position: fixed;
+         top: 50%;
+         right: 0px;
+         transform: translateY(-50%);
+         padding-bottom: 20rem;
+     }
+ }
