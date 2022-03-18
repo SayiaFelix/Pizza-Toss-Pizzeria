@@ -52,6 +52,9 @@
  .btn {
      background-color: transparent;
      border: 2px solid #fff;
+ }
+ 
+ .btn a {
      font-weight: bold;
      color: #CDAA7C;
      font-size: 25px;
@@ -107,6 +110,8 @@
      }
      .btn {
          width: 130px;
+     }
+     .btn a {
          font-size: 14px;
      }
      .communication {
@@ -130,6 +135,8 @@
      }
      .btn {
          width: 110px;
+     }
+     .btn a {
          font-size: 12px;
      }
      .communication {
