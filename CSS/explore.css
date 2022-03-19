@@ -15,6 +15,11 @@
      background-attachment: fixed;
  }
  
+ #logo2 {
+     margin-top: -5%;
+     border-radius: 5%;
+ }
+ 
  .Explore-pizza {
      background: url("../images/menu.jpg");
      background-repeat: no-repeat;
