@@ -1,128 +1,259 @@
-@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Inspiration&family=M+PLUS+1p:wght@300&family=Open+Sans&family=PT+Sans:ital@1&family=Roboto:wght@100;400&display=swap');
-* {
-    box-sizing: border-box;
-}
-
-body {
-    padding: 0;
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    position: relative;
-    width: 100%;
-    /* background: url("../images/aboutbgg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed; */
-}
-
-.Explore-pizza {
-    background: url("../images/menu.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
-}
-
-#Explore {
-    margin-top: 15%;
-}
-
-.container {
-    position: relative;
-}
-
-.image {
-    width: 100%;
-    height: auto;
-}
-
-.overlay {
-    position: absolute;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.3);
-    color: #f1f1f1;
-    transition: .5s ease;
-    opacity: 0;
-    font-size: 25px;
-    padding: 3%;
-    text-align: center;
-}
-
-.container:hover .overlay {
-    opacity: 1;
-}
-
-
-/* communication section */
-
-.communication-container a,
-.communication a:hover {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: wheat;
-    margin: 20px 10px;
-    border-radius: 50%;
-    margin-top: 3%;
-}
-
-.communication-container {
-    display: flex;
-}
-
-.communication-container i {
-    color: #0a0a0a;
-    font-size: 15px;
-}
-
-.communication-container a:hover {
-    background-color: #fff;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
-    transition: all ease 0.5s;
-}
-
-.communication-container a:hover i {
-    color: #050505;
-    transition: all ease 0.5s;
-}
-
-
-/* .communication a:hover {
-    background-color: #ADA69F;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
-    transition: all ease 0.5s;
-} */
-
-.communication a:hover i {
-    color: #ffffff;
-    transition: all ease 0.5s;
-}
-
-.communication {
-    position: fixed;
-    top: 50%;
-    right: 0px;
-    transform: translateY(-50%);
-}
-
-.communication a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 40px;
-    padding: 0px;
-    margin: 0px;
-    line-height: 0px;
-    border-radius: 10px;
-    background-color: wheat;
-    border: 1px solid #cbcbcb;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
-}
-
-.communication i {
-    color: #2b2b2b;
-    font-size: 23px;
-}
+ @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Inspiration&family=M+PLUS+1p:wght@300&family=Open+Sans&family=PT+Sans:ital@1&family=Roboto:wght@100;400&display=swap');
+ * {
+     box-sizing: border-box;
+ }
+ 
+ body {
+     padding: 0;
+     margin: 0;
+     font-family: 'Open Sans', sans-serif;
+     position: relative;
+     width: 100%;
+     background: url("../images/explorebg.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
+ }
+ 
+ .Explore-pizza {
+     background: url("../images/menu.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 100vh;
+     width: 100%;
+ }
+ 
+ #Explore {
+     margin-top: 22%;
+ }
+ 
+ #Explore1 {
+     color: #fff;
+     font-size: 55px;
+     font-weight: 700;
+ }
+ 
+ #Explore2 {
+     margin-top: -1%;
+     color: #fff;
+     font-size: 45px;
+     font-weight: 100;
+     font-family: 'Cookie', cursive;
+ }
+ 
+ #Explore3 {
+     color: #E6A756;
+     font-size: 45px;
+     font-weight: 500;
+     margin-top: 5%;
+ }
+ 
+ .row {
+     margin-top: 2%;
+ }
+ 
+ .pizzaSize img {
+     border-radius: 5px;
+ }
+ 
+ #LargeContent h3,
+ #MediumContent h3,
+ #SmallContent h3 {
+     font-weight: 700;
+     font-size: 25px;
+     color: #fff;
+ }
+ 
+ #LargeContent,
+ #MediumContent,
+ #SmallContent {
+     margin-top: -40%;
+     display: none;
+ }
+ 
+ #LargeContent p,
+ #MediumContent p,
+ #SmallContent p {
+     font-weight: 500;
+     font-size: 15px;
+     color: #faf6f6;
+     text-align: center;
+ }
+ 
+ #pizzaCrustToppings {
+     color: #E6A756;
+     font-size: 40px;
+     font-weight: 400;
+     margin-top: 5%;
+ }
+ 
+ .container {
+     position: relative;
+ }
+ 
+ .image {
+     width: 100%;
+     height: auto;
+ }
+ 
+ .overlay {
+     position: absolute;
+     bottom: 0;
+     background: rgba(0, 0, 0, 0.3);
+     color: #f1f1f1;
+     transition: .5s ease;
+     opacity: 0;
+     font-size: 25px;
+     padding: 3%;
+     text-align: center;
+ }
+ 
+ .container:hover .overlay {
+     opacity: 1;
+ }
+ /* communication section */
+ 
+ #contact-Us {
+     background-color: #6C757D;
+     margin-top: 2%;
+     height: 50vh;
+ }
+ 
+ #logoimage {
+     border-radius: 10%;
+ }
+ 
+ .btn {
+     background-color: transparent;
+     border: none;
+ }
+ 
+ .btn a {
+     font-weight: 500;
+     color: #CDAA7C;
+     font-size: 20px;
+ }
+ 
+ #offer {
+     color: #CDAA7C;
+     font-weight: 900;
+ }
+ 
+ #closed {
+     color: red;
+     font-weight: 600;
+ }
+ 
+ #btn2 {
+     margin-top: -3%;
+     margin-left: 30%;
+ }
+ 
+ .communication-container a {
+     width: 30px;
+     height: 30px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: rgb(226, 172, 72);
+     margin: 20px 10px;
+     border-radius: 50%;
+ }
+ 
+ .communication-container {
+     display: flex;
+ }
+ 
+ .communication-container i {
+     color: #0a0a0a;
+     font-size: 15px;
+ }
+ 
+ .communication-container a:hover {
+     background-color: #fff;
+     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+     transition: all ease 0.5s;
+ }
+ 
+ .communication-container a:hover i {
+     color: #050505;
+     transition: all ease 0.5s;
+ }
+ 
+ .communication a:hover {
+     background-color: #ADA69F;
+     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+     transition: all ease 0.5s;
+ }
+ 
+ .communication a:hover i {
+     color: #ffffff;
+     transition: all ease 0.5s;
+ }
+ 
+ .communication {
+     position: fixed;
+     top: 50%;
+     right: 0px;
+     transform: translateY(-50%);
+ }
+ 
+ .communication a {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 50px;
+     height: 40px;
+     padding: 0px;
+     margin: 0px;
+     line-height: 0px;
+     border-radius: 10px;
+     background-color: wheat;
+     border: 1px solid #cbcbcb;
+     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .communication i {
+     color: #2b2b2b;
+     font-size: 23px;
+ }
+ 
+ #mc_embed_signup {
+     clear: left;
+     width: 99%;
+     border-radius: 5px;
+     margin-top: 5%;
+ }
+ 
+ .Map {
+     background-color: #fff;
+ }
+ 
+ #Location {
+     width: 100%;
+     height: 60vh;
+     padding: 5px;
+     border-radius: 2%;
+     border: 2px solid #cbcbcb;
+     background-color: #191919;
+     margin-top: 5%;
+ }
+ 
+ #Location iframe {
+     width: 100%;
+     height: 58vh;
+     border-radius: 2%;
+ }
+ /* copyright */
+ 
+ .Copyright {
+     width: 100%;
+     font-size: 15px;
+     position: absolute;
+     text-align: center;
+     background-color: #6C757D;
+ }
+ 
+ #Copyright {
+     color: #ffffff;
+ }

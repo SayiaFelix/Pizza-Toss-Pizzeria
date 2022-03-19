@@ -23,6 +23,7 @@
     <link rel="stylesheet" type="text/css" href="./CSS/explore.css">
     <link rel="stylesheet" type="text/css" href="./CSS/responsive.css">
 
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
     <title>Pizza Toss Pizzeria</title>
     <link rel="icon" href="./images/logo.png" type="image/x-icon">
 
@@ -32,7 +33,6 @@
 
 
     <header class="Explore-pizza">
-
 
         <nav class=" navbar navbar-expand-lg font-monospace navbar-dark bg-secondary">
             <div class="container-fluid">
@@ -66,52 +66,52 @@
 
         <div class="container-fluid text-center" id="Explore">
 
-            <h4 id="explore1">Our Favourites</h4>
-            <h1 id="header">Discover Our Menu</h1>
-            <h4 id="header1">Your smile and Taste is here</h4>
+
+            <h1 id="Explore1">Discover Our Menu</h1>
+            <h4 id="Explore2">Your smile and Taste is here</h4>
 
         </div>
     </header>
 
-
+    <!-- pizza sizes -->
     <div class="container">
-        <h2 class="text-center">Pizza TASTE</h2>
+        <h2 class="text-center" id="Explore3">Pizzeria TASTE</h2>
+
         <div class="row text-center">
 
             <div class="col-4">
-                <div class="pizzaLarge">
+                <div class="pizzaSize">
 
-
-
-
-
-                    <img src="./images/pizzaLarge.jpeg" class="img-fluid" alt="pizzaLarge">
-                    <h3>Large</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor animi doloribus <br> accusamus optio blanditiis fuga labore vitae</p>
+                    <img src="./images/pizzaLarge.jpeg" class="img-fluid" id="pizzaLarge" alt="pizzaLarge">
+                    <div id="LargeContent">
+                        <h3>Large Pizza</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor animi doloribus</p>
+                    </div>
                 </div>
             </div>
 
 
 
             <div class="col-4">
-                <div class="pizzaMedium">
+                <div class="pizzaSize">
 
-
-                    <img src="./images/PizzaMedium.jpeg" class="img-fluid" alt="pizzaMedium">
-                    <h3>Medium</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor animi doloribus <br> accusamus optio blanditiis fuga labore vitae</p>
+                    <img src="./images/PizzaMedium.jpeg " class="img-fluid" id="pizzaMedium" alt="pizzaMedium">
+                    <div id="MediumContent">
+                        <h3>Medium Pizza</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor animi doloribus</p>
+                    </div>
                 </div>
 
             </div>
 
             <div class="col-4">
 
-                <div class="pizzaSmall">
-
-
-                    <img src="./images/pizzasmall.jpeg" class="img-fluid" alt="pizzaMedium">
-                    <h3>Small</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor animi doloribus <br> accusamus optio blanditiis fuga labore vitae</p>
+                <div class="pizzaSize">
+                    <img src="./images/pizzasmall.jpeg" class="img-fluid" id="pizzaSmall" alt="pizzaMedium">
+                    <div id="SmallContent">
+                        <h3>Small Pizza</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor animi doloribus.</p>
+                    </div>
                 </div>
 
             </div>
@@ -123,26 +123,26 @@
 
     <!-- Toppings -->
     <div class="container">
-        <h2 class="text-center">Pizza + Crust + Toppings</h2>
+        <h2 class="text-center" id="pizzaCrustToppings">Pizza + Crust + Toppings</h2>
 
         <div class="row">
 
             <div class="col-4">
-                <img src="./images/crust55.jpeg" alt="crust1" class="image img-fluid">
-                <div class="overlay">Crust1</div>
-
-            </div>
-
-            <div class="col-4 ">
-
-                <img src="./images/crust22.jpeg " alt="crust2 " class="image img-fluid">
-                <div class="overlay"> Crust2</div>
+                <img src="./images/crust55.jpeg " alt="crust1 " class="image img-fluid ">
+                <div class="overlay">Italiana + Pepporoni</div>
 
             </div>
 
             <div class="col-4">
-                <img src="./images/crust33.jpeg " alt="crust3" class="image img-fluid">
-                <div class="overlay">Crust3</div>
+
+                <img src="./images/crust22.jpeg " alt="crust2 " class="image img-fluid ">
+                <div class="overlay"> Mexicana + Calzone</div>
+
+            </div>
+
+            <div class="col-4">
+                <img src="./images/crust33.jpeg " alt="crust3 " class="image img-fluid ">
+                <div class="overlay">Margharitta + Stuffed</div>
 
             </div>
 
@@ -150,52 +150,56 @@
 
     </div>
 
+
+    <!-- Contact section -->
     <div id="contact-Us">
 
         <div class="container">
 
             <div class="row">
 
-                <div class="col-3">
+                <div class="col-4">
                     <div class="Logo-icon">
-                        <nav class="navbar navbar-light bg-light">
-                            <div class="container-fluid">
+                        <nav class="navbar navbar-dark fs-1 fw-bold">
+                            <div class=" container-fluid">
                                 <a class="navbar-brand" href="#">
-                                    <img src="./images/logo.png" alt="logo" width="30" height="24" class="d-inline-block align-text-top">Pizza Toss PIZZERIA
+                                    <img src="./images/logo.png" alt="logo" width="60 " height="35" id="logoimage" class="d-inline-block align-text-top"><br> Pizza Toss PIZZERIA
                                 </a>
                             </div>
                         </nav>
 
-                        <P>Pizza Toss PIZZERIA is under SirFelix management and aim is to provide pizza with vareity of taste from the rest of the world.</P>
+                        <P class="text-center text-light fw-lighter">Pizza Toss PIZZERIA is under SirFelix management and aim is to provide pizza with vareity of taste from the rest of the world.</P>
 
                         <button type="button" class="btn btn-secondary"><a href="#Location"> Location</a></button>
                     </div>
-
-
                 </div>
 
-                <div class="col-3">
+                <div class="col-4">
 
                     <div class="open-hours">
 
-                        <h2>Working Hours</h2>
+                        <h3 class="text-light text-center fw-bold">Working Hours</h3>
 
-                        <h5>Mon & Tue: 8;00AM TO 9;30PM</h5>
-                        <h5>Wed & Thur: 9;00AM TO 10;30PM</h5>
-                        <h5>Frid: 8;00AM TO 10;30PM <span id="offer">Offer</span></h5>
-                        <h5>Sat: 9;00AM TO 8;30PM</h5>
-                        <h5>Sun: <span id="closed">Closed</span></h5>
+                        <h5 class="text-light text-center">Mon & Tue: 8;00AM TO 9;30PM</h5>
+                        <h5 class="text-light text-center">Wed & Thur: 9;00AM TO 10;30PM</h5>
+                        <h5 class="text-light text-center">Frid: 8;00AM TO 10;30PM <span id="offer">Offers</span></h5>
+                        <h5 class="text-light text-center">Sat: 9;00AM TO 8;30PM</h5>
+                        <h5 class="text-light text-center"> <span id="closed">Sun: Closed</span></h5>
+
+                        <button type="button" class="btn btn-secondary" id="btn2"><a href="#">Order Now</a></button>
+
+
                     </div>
                 </div>
 
 
 
-                <div class="col-3">
+                <div class="col-4">
                     <div class="Contact-us">
-                        <h3>Contact Info</h3>
+                        <h3 class="text-center text-light fw-bold">Contact Info</h3>
 
-                        <h4>ADDRESS: <span id="Address">52377, Thika Road, Nairobi, Kenya</span></h4>
-                        <h4>EMAIL:<span id="contact"> sayiafelix18@gmail.com</span></h4>
+                        <h4 class="text-center text-light">ADDRESS: <span id="offer">52,Thika Road, Nairobi, Kenya</span></h4>
+                        <h4 class="text-center text-light">EMAIL:<span id="offer"> sayiafelix18@gmail.com</span></h4>
                     </div>
 
 
@@ -208,17 +212,6 @@
                     </div>
 
                 </div>
-                <div class="col-3">
-
-                    <div class="open-hours">
-
-                        <h2>Say Hello</h2>
-
-
-                    </div>
-                </div>
-
-
 
             </div>
         </div>
@@ -226,33 +219,98 @@
 
 
     <!-- Fixed communication buttons -->
-    <div class="communication">
-        <a href="https://web.facebook.com/jay.safulycus.7" target="-blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.linkedin.com/in/sayia-felix-lucas-b9563a214/" target="-blank"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="https://twitter.com/safu_jay" target="-blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com/jay_safu_msela/" target="-blank"><i class="fab fa-instagram"></i></a>
+    <div class="communication ">
+        <a href="https://web.facebook.com/jay.safulycus.7 " target="-blank "><i class="fab fa-facebook-f "></i></a>
+        <a href="https://www.linkedin.com/in/sayia-felix-lucas-b9563a214/ " target="-blank "><i class="fa-brands fa-linkedin-in "></i></a>
+        <a href="https://twitter.com/safu_jay " target="-blank "><i class="fab fa-twitter "></i></a>
+        <a href="https://www.instagram.com/jay_safu_msela/ " target="-blank "><i class="fab fa-instagram "></i></a>
     </div>
 
 
-    <!-- Location -->
+    <!-- map and contact -->
 
-    <div id="Location">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255282.3237489368!2d36.70730825509494!3d-1.303205056014412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi!5e0!3m2!1sen!2ske!4v1645877293546!5m2!1sen!2ske "
-            width="600 " height="450 " style="border:0; " allowfullscreen=" " loading="lazy "></iframe>
+
+    <div class="Map">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-4">
+
+
+                    <div class="sayHello">
+
+                        <h2 class="text-center text-dark fw-lighter">Say Hello</h2>
+
+                        <!-- Begin Mailchimp Signup Form -->
+
+                        <div id="mc_embed_signup">
+                            <form action="https://gmail.us14.list-manage.com/subscribe/post?u=49d62eaeeb734f79d07ce38aa&amp;id=768d435433" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                <div id="mc_embed_signup_scroll">
+
+                                    <div class="indicates-required"><span class="asterisk"></span></div>
+                                    <div class="mc-field-group">
+                                        <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span></label>
+                                        <input type="email" value="" name="EMAIL" placeholder="Email" class="required email" id="mce-EMAIL">
+                                    </div>
+
+                                    <div class="mc-field-group">
+                                        <label for="mce-FNAME">Name </label>
+                                        <input type="text" value="" name="FNAME" class="" placeholder="Name" id="mce-FNAME">
+                                    </div>
+
+                                    <div class="mc-field-group">
+                                        <label for="mce-MMERGE7">Message </label>
+                                        <input type="text" value="" name="MMERGE7" placeholder="Say something" class="" id="mce-MMERGE7">
+                                    </div>
+
+                                    <div id="mce-responses" class="clear foot">
+                                        <div class="response" id="mce-error-response" style="display:none"></div>
+                                        <div class="response" id="mce-success-response" style="display:none"></div>
+                                    </div>
+
+                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_49d62eaeeb734f79d07ce38aa_768d435433" tabindex="-1" value=""></div>
+                                    <div class="optionalParent">
+                                        <div class="clear foot">
+                                            <input type="submit" value="Send Message" name="subscribe" id="mc-embedded-subscribe" class="button">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <!-- Location -->
+                <div class="col-8">
+                    <div id="Location">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255282.3237489368!2d36.70730825509494!3d-1.303205056014412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi!5e0!3m2!1sen!2ske!4v1645877293546!5m2!1sen!2ske "
+                            width="600 " height="450 " style="border:0; " allowfullscreen=" " loading="lazy"></iframe>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
     </div>
-
-
 
     <!-- COPYRIGHT -->
 
     <div class="Copyright">
-        <p class="m-2 medium">Copyright &copy; pizza Toss PIZZERIA 2022 <br>with Love by,<span id="Copyright">Sir Felix</span> </p>
+        <p class="m-2 medium">Copyright &copy; pizza Toss PIZZERIA 2022 <br>with Love by,<span id="Copyright ">Sir Felix</span> </p>
     </div>
 
 
-
-
-
+    <!-- js files -->
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./JS/Script.js"></script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
