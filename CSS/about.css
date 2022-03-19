@@ -1,168 +1,165 @@
-@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Inspiration&family=M+PLUS+1p:wght@300&family=Open+Sans&family=PT+Sans:ital@1&family=Roboto:wght@100;400&display=swap');
-* {
-    box-sizing: border-box;
-}
-
-body {
-    padding: 0;
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    position: relative;
-    width: 100%;
-    background: url("../images/aboutbgg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-#logo2 {
-    margin-top: -5%;
-    border-radius: 5%;
-}
-
-#Helo {
-    color: #DFD599;
-    font-size: 40px;
-    font-weight: 700;
-    font-family: 'Cookie', cursive;
-}
-
-#pizza {
-    color: #E6A756;
-    font-size: 45px;
-    font-weight: bold;
-}
-
-#pizza2 {
-    font-size: 30px;
-    font-weight: 700;
-    font-family: 'M PLUS 1p', sans-serif;
-    color: #fff;
-}
-
-#tag {
-    color: #DFD599;
-    font-size: 40px;
-    font-weight: lighter;
-    font-family: 'Cookie', cursive;
-}
-
-.About-us {
-    background: url("../images/aboutus.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
-}
-
-#About {
-    margin-top: 6%;
-}
-
-#header {
-    color: #5B2110;
-    font-size: 45px;
-    font-weight: bold;
-}
-
-#header1 {
-    color: #E6A756;
-    font-size: 30px;
-    font-weight: 700;
-    font-family: 'Cookie', cursive;
-}
-
-.btn {
-    background-color: #674844;
-    border: 2px solid #fff;
-    border-radius: 20px;
-    margin-top: -46%;
-    margin-left: 1%;
-    width: 12%;
-}
-
-.btn a {
-    font-weight: bold;
-    color: #CDAA7C;
-    font-size: 25px;
-}
-
-#welcome {
-    margin-top: 5%;
-}
-
-.images {
-    width: 60%;
-    text-align: center;
-    margin-left: 20%;
-}
-
-#img {
-    font-size: 30px;
-    font-weight: 900;
-    color: #fff;
-}
-
-#imgcontent {
-    color: #DFD599;
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.carousel-item img {
-    border-radius: 10%;
-}
-
-.communication-bar {
-    height: 24vh;
-    margin-top: 1%;
-    background-color: #BE8E5D;
-    width: 100%;
-    box-shadow: rgba(80, 48, 48, 0.5);
-    border-radius: 10px;
-}
-
-.communication-container a {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: wheat;
-    margin: 20px 10px;
-    border-radius: 50%;
-    margin-top: 3%;
-}
-
-.communication-container {
-    display: flex;
-    padding-left: 35%;
-}
-
-.communication-container i {
-    color: #0a0a0a;
-    font-size: 25px;
-}
-
-.communication-container a:hover {
-    background-color: #fff;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
-    transition: all ease 0.5s;
-}
-
-.communication-container a:hover i {
-    color: #050505;
-    transition: all ease 0.5s;
-}
-
-.Copyright {
-    color: rgb(241, 239, 239);
-    font-size: 15px;
-    position: absolute;
-    text-align: center;
-    padding-left: 35%;
-}
-
-#Copyright {
-    color: #050505;
-}
+ @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Inspiration&family=M+PLUS+1p:wght@300&family=Open+Sans&family=PT+Sans:ital@1&family=Roboto:wght@100;400&display=swap');
+ * {
+     box-sizing: border-box;
+ }
+ 
+ body {
+     padding: 0;
+     margin: 0;
+     font-family: 'Open Sans', sans-serif;
+     position: relative;
+     width: 100%;
+     background: url("../images/aboutbgg.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
+ }
+ 
+ #logo2 {
+     margin-top: -5%;
+     border-radius: 5%;
+ }
+ 
+ #Helo {
+     color: #DFD599;
+     font-size: 40px;
+     font-weight: 700;
+     font-family: 'Cookie', cursive;
+ }
+ 
+ #pizza {
+     color: #E6A756;
+     font-size: 45px;
+     font-weight: bold;
+ }
+ 
+ #pizza2 {
+     font-size: 30px;
+     font-weight: 700;
+     font-family: 'M PLUS 1p', sans-serif;
+     color: #fff;
+ }
+ 
+ #tag {
+     color: #DFD599;
+     font-size: 40px;
+     font-weight: lighter;
+     font-family: 'Cookie', cursive;
+ }
+ 
+ .About-us {
+     background: url("../images/aboutus.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 100vh;
+     width: 100%;
+ }
+ 
+ #About {
+     margin-top: 6%;
+ }
+ 
+ #header {
+     color: #5B2110;
+     font-size: 45px;
+     font-weight: bold;
+ }
+ 
+ #header1 {
+     color: #E6A756;
+     font-size: 30px;
+     font-weight: 700;
+     font-family: 'Cookie', cursive;
+ }
+ 
+ .btn {
+     background-color: #674844;
+     border: 2px solid #fff;
+     border-radius: 20px;
+ }
+ 
+ .btn-secondary a {
+     font-weight: bold;
+     color: #CDAA7C;
+     font-size: 25px;
+ }
+ 
+ #welcome {
+     margin-top: 5%;
+ }
+ 
+ .images {
+     width: 60%;
+     text-align: center;
+     margin-left: 20%;
+ }
+ 
+ #img {
+     font-size: 30px;
+     font-weight: 900;
+     color: #fff;
+ }
+ 
+ #imgcontent {
+     color: #DFD599;
+     font-size: 20px;
+     font-weight: 700;
+ }
+ 
+ .carousel-item img {
+     border-radius: 10%;
+ }
+ 
+ .communication-bar {
+     height: 24vh;
+     margin-top: 1%;
+     background-color: #BE8E5D;
+     width: 100%;
+     box-shadow: rgba(80, 48, 48, 0.5);
+     border-radius: 10px;
+ }
+ 
+ .communication-container a {
+     width: 50px;
+     height: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: wheat;
+     margin: 20px 10px;
+     border-radius: 50%;
+     margin-top: 3%;
+ }
+ 
+ .communication-container {
+     display: flex;
+     padding-left: 35%;
+ }
+ 
+ .communication-container i {
+     color: #0a0a0a;
+     font-size: 25px;
+ }
+ 
+ .communication-container a:hover {
+     background-color: #fff;
+     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+     transition: all ease 0.5s;
+ }
+ 
+ .communication-container a:hover i {
+     color: #050505;
+     transition: all ease 0.5s;
+ }
+ 
+ .Copyright {
+     color: rgb(241, 239, 239);
+     font-size: 15px;
+     position: absolute;
+     text-align: center;
+     padding-left: 35%;
+ }
+ 
+ #Copyright {
+     color: #050505;
+ }
