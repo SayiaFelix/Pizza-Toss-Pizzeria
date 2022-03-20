@@ -40,7 +40,6 @@ $('#pizzaSmall').mouseleave(
     function() {
 
         $("#SmallContent").fadeOut()
-
     })
 
 
@@ -73,8 +72,21 @@ var $mcj = jQuery.noConflict(true);
 
 
 
-//Order Section
+// Order Section
+
 // Basic Logics
+// Initializing Values
+
+let total = 0;
+let deliveryFee = 200;
+let crustPrice = new Array(250, 200, 350);
+let sizePrice = new Array(350, 500, 700);
+let toppingsPrice = new Array(140, 180, 220);
+
+
+
+// Basic logics
+
 function Pizza(size, crust, topping) {
     this.size = size;
     this.crust = crust;
@@ -82,159 +94,80 @@ function Pizza(size, crust, topping) {
 
 }
 
-// function Crust(crispy, stuffed, gluten) {
-//     this.pepperoni = crispy;
-//     this.veges = stuffed;
-//     this.bacon = gluten;
-// }
 
-// function Topping(pepperoni, veges, bacon) {
-//     this.pepperoni = pepperoni;
-//     this.veges = veges;
-//     this.bacon = bacon;
-// }
+// User Interface
 
-let sizePrice = {
-    large: 1300,
-    medium: 700,
-    small: 500
+$(document).ready(function() {
 
-};
-let crustPrice = {
-    crispy: 400,
-    stuffed: 200,
-    gluten: 100
-};
-let toppingPrice = {
-    pepperoni: 150,
-    bacon: 100,
-    veges: 75
-};
+    $("form#myPizza").submit(function(event) {
+        event.preventDefault();
 
-// Calculating price
+        let selectedPizzaSize = $("select#pizzaSize").find(":selected").val();;
+        let selectedPizzaCrust = $("select#pizzaCrust").find(":selected").val();
+        let selectedPizzaToppings = $("select#pizzaToppings").find(":selected").val();;
+
+        let newPizza = new Pizza(selectedPizzaSize, selectedPizzaCrust, selectedPizzaToppings);
+
+        $("#cart").hide();
+        $("#checkout").show();
 
 
-function sizePriceCalc(size) {
-    if (size === "small") {
-        return sizePrice.small * 1;
-    } else if (size === "medium") {
-        return sizePrice.medium * 1;
-    } else {
-        return sizePrice.large * 1;
-    }
-}
+        let firstOrder = sizePriceCalc(selectedPizzaSize) + crustPriceCalc(selectedPizzaCrust) + toppingPriceCalc(selectedPizzaToppings);
 
-function crustPriceCalc(crust) {
-    if (crust === "crispy") {
-        return crustPrice.crispy * 1;
-    } else if (crust === "stuffed") {
-        return crustPrice.stuffed * 1;
-    } else {
-        return crustPrice.gluten * 1;
-    }
-}
+        let orderedList = '<tr><td id="size">' + newPizza.size + '</td><td id="toppings">' + newPizza.topping + '</td><td id="crust">' + newPizza.crust + '</td><td id="total">' + firstOrder + '</td></tr>'
 
-function toppingPriceCalc(topping) {
-    if (topping === "pepperoni") {
-        return crustPrice.pepperoni * 1;
-    } else if (topping === "bacon") {
-        return crustPrice.bacon * 1;
-    } else {
-        return crustPrice.veges * 1;
-    }
-}
+        $("#Order").append(orderedList);
 
 
-//UserInterface
+        $("#pizzaSize").val("");
+        $("#pizzaCrust").val("");
+        $("#pizzaToppings").val("");
 
-// let large = new Pizza('large', 'ksh 1300');
-// let medium = new Pizza('medium', 'ksh 700');
-// let small = new Pizza('small', 'ksh 500');
-
-// function getPizzaSize() {
-//     return $("#pizzaSize").find(":selected").val();
-// }
-
-// function getCrusts() {
-//     return $("#pizzaCrust").find(":selected").val();
-// }
-
-// function getToppings() {
-//     return $("#pizzaToppings").find(":selected").val();
-// }
-
-
-$("form#myPizza").submit(function(event) {
-    event.preventDefault();
-
-    let inputtedPizzaSize = $("select#pizzaSize").find(":selected").val();;
-    let inputtedPizzaCrust = $("select#pizzaCrust").find(":selected").val();
-    let inputtedPizzaToppings = $("select#pizzaToppings").find(":selected").val();;
-
-    let newPizza = new Pizza(inputtedPizzaSize, inputtedPizzaCrust, inputtedPizzaToppings);
-    $("#cart").hide();
-    $("#checkout").show();
-
-
-    let firstOrder = sizePriceCalc(inputtedPizzaSize) + crustPriceCalc(inputtedPizzaCrust) + toppingPriceCalc(inputtedPizzaToppings);
-
-    let orderedList = '</th><td id="size">' +
-        $(".size option:selected").text() +
-        " - " + newPizza.size + '</td><td id="toppings">' +
-        $(".toppings option:selected").text() +
-        " - " + newPizza.toppings +
-        '</td><td id="crust">' +
-        $(".crust option:selected").text() +
-        " - " + newPizza.crust +
-        '</td><td id="total">' +
-        firstOrder + '</td></tr>'
-
-    $("#Order").append(orderedList);
-
-});
-var totalOrderedNo = parseInt($("#OrderedNo").val());
-
-function calcTotalPrice() {
-    var firstPizzaPrice = sizePriceCalc(inputtedPizzaSize) + crustPriceCalc(inputtedPizzaCrust) + toppingPriceCalc(inputtedPizzaToppings);
-
-    return firstPizzaPrice;
-}
-var orderedList = [];
-
-// $("#orderBtn").on("click", function() {
-//     totalOrderedNo += 1;
-//     $("#orderedNo").text(totalOrderedNo);
-//     pizzaSizeList.push(calcTotalPrice());
-// });
-$("#orderBtn").click(function() {
-    totalOrderedNo += 1;
-    $("#orderedNo").text(totalOrderedNo);
-    orderedList.push(calcTotalPrice());
-});
-
-$("#totalNo").click(function() {
-    let total = 0;
-    orderedList.forEach(function(pizza) {
-        total += pizza;
     });
-    $("#money").text(total);
 
-    let delivery = confirm("Would you like us deliver your pizza to your doorstep? transport cost ksh 200.");
+    var totalOrderedNo = parseInt($("#OrderedNo").val());
 
-    if (delivery) {
-        let place = prompt("Enter your location");
-        alert(`SUCCESS!!Your ordered will be delivered $ {place} and the cost is 200`)
+    function calcTotalPrice() {
+        var firstPizzaPrice = sizePriceCalc(selectedPizzaSize) + crustPriceCalc(selectedPizzaCrust) + toppingPriceCalc(selectedPizzaToppings);
 
+        return firstPizzaPrice;
     }
-    if (delivery) {
-        let location = prompt("Enter your location");
-        alert($("#location").text(location), $("#success").show());
-    } else {
-        $("#fail").show();
-    }
-    $("#pizzaSize").val("");
-    $("#pizzaCrust").val("");
-    $("#pizzaToppings").val("");
-    $("#Order").remove();
-    $("#OrderedNo").text(0);
+    var orderedList = [];
+
+
+    $("#orderBtn").click(function() {
+        totalOrderedNo += 1;
+        $("#orderedNo").text(totalOrderedNo);
+        orderedList.push(calcTotalPrice());
+    });
+
+    $("#totalNo").click(function() {
+        let total = 0;
+        orderedList.forEach(function(pizza) {
+            total += pizza;
+        });
+        $("#Order").text(total);
+
+        let delivery = confirm("Would you like us deliver your pizza to your doorstep? transport cost ksh 200.");
+
+        if (delivery) {
+            let place = prompt("Enter your location");
+            alert(`SUCCESS!!Your ordered will be delivered $ {place} and the cost is 200`)
+
+        }
+        if (delivery) {
+            let location = prompt("Enter your location");
+            alert($("#location").text(location), $("#success").show());
+        } else {
+            $("#fail").show();
+        }
+        $("#pizzaSize").val("");
+        $("#pizzaCrust").val("");
+        $("#pizzaToppings").val("");
+        $("#Order").remove();
+        $("#OrderedNo").text(0);
+
+
+
+    });
 });
