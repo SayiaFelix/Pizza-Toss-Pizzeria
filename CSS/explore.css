@@ -262,3 +262,12 @@
  #Copyright {
      color: #ffffff;
  }
+ 
+ #checkout {
+     display: none;
+ }
+ 
+ #success,
+ #fail {
+     display: none;
+ }
