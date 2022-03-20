@@ -9,7 +9,7 @@
      font-family: 'Open Sans', sans-serif;
      position: relative;
      width: 100%;
-     background: url("../images/explorebg.jpg");
+     /* background: url("../images/explorebg.jpg"); */
      background-repeat: no-repeat;
      background-size: cover;
      background-attachment: fixed;
