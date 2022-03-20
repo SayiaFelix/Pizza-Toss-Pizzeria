@@ -39,6 +39,10 @@ You will be able to Order pizza and it will be delivered to you.
 Repo Link Available Here;
 https://github.com/SayiaFelix/Pizza-Toss-Pizzeria.git
 
+### live demo
+live Demo link Available here;
+https://drive.google.com/file/d/1d5jvZsYx5EBMaad9c3BhXA-OU4mK-Em7/view
+
 
 ### Live site
 Available Here;
