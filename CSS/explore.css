@@ -267,7 +267,7 @@
      display: none;
  }
  
- #success,
- #fail {
-     display: none;
+ #more-info h6 {
+     font-size: 15px;
+     font-weight: 800;
  }
