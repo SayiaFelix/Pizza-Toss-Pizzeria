@@ -3,7 +3,9 @@
 #### By **{Sayia Felix Lucas}**
 ## Description
 {Pizza Toss PIZZERIA is a project where i have design A Website for Pizza Restuarent where one can order pizza and add the toppings too and the order will be delivered; 
- }
+ ![Screenshot from 2022-03-20 23-00-18](https://user-images.githubusercontent.com/98148605/159183944-5a645eb5-92b0-4670-81f7-3d127ab0dafd.png)
+
+}
 ### User Stories
 1.Choose the size of pizza I want e.g Small, Medium, Large
 2.Choose what kind of crust I would like the pizza to have e.g Crispy, Stuffed, Gluten-free
@@ -13,6 +15,8 @@
 6.Have an option to have the pizza delivered or not.  If delivered I want to be alerted how much the delivery charge will be.
 7.If I want my pizza to be delivered, I want to be prompted to enter where the delivery should be made and an alert saying '' your order will be delivered to your location"
 8.See a checkout button that when clicked shows the total amount charged for the orders.
+![Screenshot from 2022-03-20 23-05-10](https://user-images.githubusercontent.com/98148605/159183954-603ae704-f65d-4491-956c-9e1529ad8e40.png)
+}
 ## Setup/Installation Requirements
 * This is a great place
 * to list setup instructions
