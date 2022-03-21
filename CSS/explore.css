@@ -271,3 +271,18 @@
      font-size: 15px;
      font-weight: 800;
  }
+ 
+ .btn-outline-secondary {
+     border: 2px solid black;
+     border-radius: 10px;
+     color: #6C757D;
+     font-weight: 700;
+ }
+ 
+ .card-body h4 {
+     color: #E6A756;
+ }
+ 
+ .card-body h5 h6 {
+     color: #E6A756;
+ }

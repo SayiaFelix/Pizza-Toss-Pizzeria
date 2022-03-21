@@ -52,18 +52,19 @@ $('#pizzaSmall').mouseleave(
 
 $(document).ready(function() {
 
-    $(".table").hide();
-    $(".button2").hide();
+    $("#cart").hide();
+    $("#btnContent").hide();
     $("#more-info").hide();
-    $(".btn.yes").hide();
-    $(".btn.no").hide();
+    $("#Yes").hide();
+    $("#No").hide();
+    $(".card-body h6").hide();
     $("#more-info h4").hide();
     $("#more-info h6").hide();
 
 
 
 
-    $('.btn.order').click(function() {
+    $('#orderBtn1').click(function() {
 
         let pizzaSize = $("#pizzaSize option:selected").val();
         let pizzaToppings = $("#pizzaToppings option:selected").val();
@@ -74,9 +75,11 @@ $(document).ready(function() {
 
 
         $("#cart").show();
-        $(".button2").show();
-        $(".btn.order").hide();
+        $("#btnContent").show();
+        $("#orderBtn1").hide();
         $(".card-text").hide();
+        $(".card-body h4").hide();
+        $(".card-body h6").show();
 
         $("#size").html($("#pizzaSize option:selected").text() + " - " + pizzaSize);
         $("#toppings").html($("#pizzaToppings option:selected").text() + " - " + pizzaCrust);
@@ -92,7 +95,7 @@ $(document).ready(function() {
             this.total = total;
 
         }
-        $('.btn.more-pizza').click(function() {
+        $('#orderMore').click(function() {
 
             let pizzaSize = $("#pizzaSize option:selected").val();
             let pizzaToppings = $("#pizzaToppings option:selected").val();
@@ -103,42 +106,46 @@ $(document).ready(function() {
 
             let newPizza = new Pizza(pizzaSize, pizzaToppings, pizzaCrust, total);
 
-            let newRow = '<tr><td id="size">' + $("#pizzaSize option:selected").text() + " - " + newPizza.size + '</td><td id = "toppings">' + $("#pizzaToppings option:selected").text() + " - " + newPizza.toppings + '</td><td id="crust">' + $("#pizzaCrust option:selected").text() + " - " + newPizza.crust + '</td><td id = "total">' + newPizza.total + '<td><tr>'
+            let orderedList = '<tr><td id="size">' + $("#pizzaSize option:selected").text() + " - " + newPizza.size + '</td><td id = "toppings">' + $("#pizzaToppings option:selected").text() + " - " + newPizza.toppings + '</td><td id="crust">' + $("#pizzaCrust option:selected").text() + " - " + newPizza.crust + '</td><td id = "total">' + newPizza.total + '<td><tr>'
 
-            $("#Order").append(newRow);
+            $("#Order").append(orderedList);
         });
 
-        $(".btn.check-out").click(function() {
-            $(".btn.more-pizza").hide();
-            $(".btn.check-out").hide();
+        $("#checkOut").click(function() {
+            $("#orderMore").hide();
+            $("#checkOut").hide();
             $("#more-info").show();
-            $(".btn.yes").show();
-            $(".btn.no").show();
+            $("#Yes").show();
+            $("#No").show();
             $("#more-info .location").hide();
+            $("#more-info h6").hide();
+
 
             grandTotal = grandTotal + total;
 
             $("#more-info h3 span").html(grandTotal);
         });
 
-        $(".btn.yes").click(function() {
+        $("#Yes").click(function() {
             $("#more-info h5").hide();
-            $(".btn.yes").hide();
-            $(".btn.no").hide();
+            $("#Yes").hide();
+            $("#No").hide();
             $("#more-info .location").show();
             $("#more-info h3 span").html(grandTotal + 300);
         });
 
-        $(".btn.no").click(function() {
+        $("#No").click(function() {
             $("#more-info h6").show();
             $("#more-info h5").hide();
-            $(".btn.yes").hide();
-            $(".btn.no").hide();
             $("#more-info .location").hide();
+            $("#Yes").hide();
+            $("#No").hide();
+
         });
 
 
-        $(".btn.complete").click(function() {
+        $("#btnComplete").click(function() {
+
             let location = $("#more-info .location input").val();
             $("#more-info h4").show();
             $("#more-info .location").hide();
